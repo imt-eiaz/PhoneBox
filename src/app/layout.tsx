@@ -3,7 +3,7 @@ import Provider from "@/layouts/Provider";
 export const metadata = {
   title: {
     default: "PhoneBox",
-    template: "%s - PhoneCareHub",
+    template: "%s - PhoneBox",
   },
 };
 
