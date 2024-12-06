@@ -21,7 +21,7 @@ export default function Login() {
             <Stack direction={{ sm: "row" }} gap={3}>
                 <Suspense>
                     <AuthButton provider="google" startIcon={<GoogleIcon />}>
-                        Login With Google
+                        Login With Google account
                     </AuthButton>
                 </Suspense>
                 <Suspense>
