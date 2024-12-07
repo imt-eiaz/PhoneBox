@@ -22,7 +22,8 @@ export default function useDashboardLinks(): RouteType[] {
             routes = [onlineAppointments, offlineAppointments, feedback];
             break;
         case "admin":
-            routes = [users, services, manageOnlineAppointments, manageOfflineAppointments, blogs, faq];
+            //routes = [users, services, manageOnlineAppointments, manageOfflineAppointments, blogs, faq];
+            routes = [users, services, customers, manageOnlineAppointments, manageOfflineAppointments, blogs, faq];
             break;
         case "superadmin":
             routes = [admins, create_admin];
@@ -38,7 +39,10 @@ const onlineAppointments = { href: "/dashboard/onlineAppointments", text: "Onlin
 const offlineAppointments = { href: "/dashboard/offlineAppointments", text: "Offline Appointments", icon: LocalLibraryIcon };
 const feedback = { href: "/dashboard/feedback", text: "Give Feedback", icon: RssFeedRoundedIcon };
 const users = { href: "/dashboard/users", text: "Manage Users", icon: GroupRoundedIcon };
+
 const services = { href: "/dashboard/services", text: "Manage Services", icon: StyleRoundedIcon };
+const customers = { href: "/dashboard/customers", text: "Manage Customers", icon: StyleRoundedIcon };
+
 const manageOnlineAppointments = { href: "/dashboard/mOnlineAppointments", text: "Online Appointments", icon: BookIcon };
 const manageOfflineAppointments = { href: "/dashboard/mOfflineAppointments", text: "Offline Appointments", icon: LocalLibraryIcon };
 const blogs = { href: "/dashboard/blogs", text: "Manage Blogs", icon: LibraryBooksRoundedIcon };
