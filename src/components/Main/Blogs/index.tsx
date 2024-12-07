@@ -25,7 +25,7 @@ export default function Blogs({ blogs }: { blogs: Blog[] }) {
                                 {content}
                             </StyledTypography>
                             <Button size="small" sx={{ mt: 1 }}>
-                                Read More
+                                Read Mores
                             </Button>
                         </CardContent>
                     </Card>
