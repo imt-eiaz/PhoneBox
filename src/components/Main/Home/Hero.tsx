@@ -12,7 +12,7 @@ export default function Hero() {
           Where Tech Meets Excellence.
         </Typography>
         <Typography>
-          PhoneBox, where your device&apos;s journey continues.
+          PhoneBox, where your device&apos;s journey continues.s
         </Typography>
         <Stack display="flex" direction="row" flexWrap="wrap" gap={2}>
           <Link href="/services">
