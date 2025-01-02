@@ -9,7 +9,7 @@ export default function Hero() {
     <StyledHero>
       <Stack gap={2}>
         <Typography variant="h4" fontWeight={800}>
-          Where Tech Meets Excellence.
+          Where Tech Meets Excellences.
         </Typography>
         <Typography>
           PhoneBox, where your device&apos;s journey continues.s

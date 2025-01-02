@@ -1,5 +1,19 @@
 import dayjs from "dayjs";
 import { StyledTypography } from "@/components/Common/StyledTypography";
+import EmployeeForm from "./EmployeeForm";
+import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
+import { Paper } from "@mui/material";
+import { makeStyles } from "@mui/styles";
+
+
+
+const useStyles = makeStyles((theme) => ({
+  pageContent: {
+    margin: theme.spacing(2),
+    padding: theme.spacing(3),
+  },
+}));
+
 import {
   Button,
   Card,
@@ -20,10 +34,17 @@ type Blog = {
 };
 
 export default function Blogs({ blogs }: { blogs: Blog[] }) {
+  const classes = useStyles();
   return (
     <>
       <Typography variant="h2">Customer Registration</Typography>
-      <Grid container columns={{ xs: 4, md: 8 }} spacing={3}>
+      
+      
+      <Paper className={classes.pageContent}>
+        <EmployeeForm />
+      </Paper>
+
+      {/* <Grid container columns={{ xs: 4, md: 8 }} spacing={3}>
         {blogs.map(
           ({ id, image, source, publishedDate, title, content }, idx) => (
             <Grid item key={id} xs={4}>
@@ -63,7 +84,14 @@ export default function Blogs({ blogs }: { blogs: Blog[] }) {
             </Grid>
           )
         )}
-      </Grid>
+      </Grid> */}
     </>
   );
 }
+
+
+
+
+
+
+ 
